@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="HomeWork04" >
+
+    <test name="PositiveTest" allow-return-values="true" >
+       <classes>
+            <class name="org.andestech.learning.rfb18.g2.AppTest" />
+        </classes>
+    </test>
+
+    <test name="NegativeTest">
+        <classes>
+            <class name="org.andestech.learning.rfb18.g2.AppTest" />
+        </classes>
+    </test>
+
+</suite>
