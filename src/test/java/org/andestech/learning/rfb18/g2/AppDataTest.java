@@ -5,6 +5,8 @@ import org.testng.ITestContext;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import java.util.Map;
+
 public class AppDataTest {
 
     private static String genLogin(String name, String sname)
@@ -43,7 +45,11 @@ public class AppDataTest {
 
     @DataProvider(name = "logindata3")
     public static Object[][] getLoginDatafromFile2(ITestContext ctx){
+
+
         String fname = ctx.getCurrentXmlTest().getParameter("fileName");
+        Map<String,String> map = ctx.getCurrentXmlTest().getAllParameters(); // read all params
+
 
         return Utils.getLoginsfromDisk(fname);
     }
