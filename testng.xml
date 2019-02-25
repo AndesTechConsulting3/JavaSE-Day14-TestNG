@@ -14,6 +14,13 @@
         </classes>
     </test>
 
+    <test name="LoginsTest">
+        <parameter name="fileName" value="src/test/resources/userdata.txt"></parameter>
+        <classes>
+           <class name="org.andestech.learning.rfb18.g2.AppDataTest" />
+        </classes>
+    </test>
+
     <!--<test name="NegativeTest">-->
         <!--<classes>-->
             <!--<class name="org.andestech.learning.rfb18.g2.AppTest" />-->
