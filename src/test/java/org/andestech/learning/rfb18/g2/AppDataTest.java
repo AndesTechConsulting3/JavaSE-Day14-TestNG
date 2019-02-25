@@ -36,11 +36,11 @@ public class AppDataTest {
 
     @DataProvider(name = "logindata2")
     public static Object[][] getLoginDatafromFile(){
-        return null;
+        return Utils.getLoginsfromDisk("src/test/resources/userdata.txt");
     }
 
 
-    @Test(dataProvider = "logindata")
+    @Test(dataProvider = "logindata2")
     public void massLoginTest(String name, String sname, String expectedLogin  ){
 
 //        String name = "Vasily";

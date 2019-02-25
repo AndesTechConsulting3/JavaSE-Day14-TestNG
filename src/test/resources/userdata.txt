@@ -1,0 +1,11 @@
+#----
+#User data in form
+#name, sname, expectedLoging
+
+
+Vasily, Petrov, VPETROV
+
+Anna, Petrushkina, APETRUSHKINA
+
+Petr, Annenkov, PANNENKOV
+
