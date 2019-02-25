@@ -36,7 +36,7 @@ public class AppDataTest {
 
     @DataProvider(name = "logindata2")
     public static Object[][] getLoginDatafromFile(){
-        return
+        return null;
     }
 
 
