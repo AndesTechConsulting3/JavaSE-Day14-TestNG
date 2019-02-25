@@ -3,6 +3,8 @@
 
 <suite name="HomeWork05" >
 
+    <parameter name="test" value="1111"/>
+
     <listeners>
         <listener class-name="org.andestech.learning.rfb18.g2.MyListener" />
     </listeners>
