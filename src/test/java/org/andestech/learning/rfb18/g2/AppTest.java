@@ -7,11 +7,35 @@ import static org.testng.Assert.assertTrue;
 
 public class AppTest
 {
-    @Test
-    public void shouldAnswerWithTrue()
+    @Test(priority = -1)
+    public void method1Test()
     {
 
         assertTrue( true );
+        System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
+
+
+
+    }
+
+    @Test
+    public void method3Test()
+    {
+
+        assertTrue( true );
+        System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
+
+
+
+    }
+
+    @Test(dependsOnMethods = "method3Test")
+    public void method2Test()
+    {
+
+        assertTrue( true );
+        System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
+
 
 
     }

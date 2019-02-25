@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="JavaSE-Day13-Autotesting-Homework5" />
+        <module name="JavaSE-Day14-TestNG" />
       </profile>
     </annotationProcessing>
   </component>
